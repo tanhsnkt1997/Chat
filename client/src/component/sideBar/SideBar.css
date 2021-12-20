@@ -1,0 +1,8 @@
+.sideBarContainer {
+  width: 400px;
+  height: 100vh;
+  padding: 20px 25px;
+  /* border-left: 1px solid #f0eff5 !important ;
+  border-right: 1px solid #f0eff5 !important ;
+  box-shadow: 0 2px 4px rgb(15 34 58 / 12%); */
+}

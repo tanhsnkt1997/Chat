@@ -1,0 +1,41 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "chat app by xuan anh dev",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --inspect ./src/server.js"
+  },
+  "keywords": [
+    "chat",
+    "appchat"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cloudinary": "^1.26.1",
+    "connect-mongo": "^4.4.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "got": "^9.6.0",
+    "linkifyjs": "^3.0.0-beta.3",
+    "metascraper": "^5.22.10",
+    "metascraper-description": "^5.22.9",
+    "metascraper-image": "^5.22.9",
+    "metascraper-title": "^5.22.9",
+    "metascraper-url": "^5.22.9",
+    "mongoose": "^5.12.13",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.7",
+    "open-graph": "^0.2.4",
+    "open-graph-scraper": "^4.9.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.1.0",
+    "pbkdf2": "^3.1.2",
+    "socket.io": "^4.1.2"
+  }
+}

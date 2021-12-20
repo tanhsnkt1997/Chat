@@ -1,0 +1,10 @@
+.navBarContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80px;
+  /* background-color: pink; */
+  height: 100vh;
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgb(15 34 58 / 12%);
+}

@@ -1,0 +1,19 @@
+// const selectListMessage = createSelector(
+//   (state) => state.message.listMessage,
+//   (listMessage) =>
+//     _.groupBy(listMessage, (result) => {
+//       return renderDay(result.createdAt);
+//     })
+// );
+// const selectListMessage = createSelector(
+//   (state) => state.message.listMessage,
+//   (listMessage) =>
+//     listMessage.reduce((acc, curr, index, array) => {
+//       if (acc[renderDay(curr.createdAt)]) {
+//         acc[renderDay(curr.createdAt)].push(curr);
+//       } else {
+//         acc[renderDay(curr.createdAt)] = [curr];
+//       }
+//       return acc;
+//     }, {})
+// );

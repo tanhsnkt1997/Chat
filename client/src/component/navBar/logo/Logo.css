@@ -1,0 +1,9 @@
+.navBar__logo_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navBar__logo_img {
+  width: 40px;
+  height: 40px;
+}

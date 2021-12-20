@@ -1,0 +1,69 @@
+.RightBar__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80px;
+  height: 100vh;
+  animation: example ease 0.3s;
+  background-color: #fff;
+  border-left: 2px solid #f0eff5;
+}
+
+@keyframes example {
+  from {
+    width: 0px;
+    opacity: 0;
+  }
+  to {
+    width: 80px;
+    opacity: 1;
+  }
+}
+
+.RightBar__first_wraper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.RightBar__first_item_wraper:first-child {
+  border-bottom: 2px solid #f0eff5;
+}
+
+.RightBar__first_item_wraper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.RightBar__first_item_title {
+  color: #9b9aa0;
+  font-size: 0.8rem;
+}
+
+.RightBar__first_item_dashboard {
+  color: #1c9dea;
+}
+
+.RightBar__first_item_dashboard_icon {
+  font-size: 2rem !important;
+}
+
+.RightBar__first_item_member_icon {
+  color: #fff !important;
+}
+
+.RightBar__first_item_border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  opacity: 0.5;
+  cursor: pointer;
+}

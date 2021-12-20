@@ -1,0 +1,15 @@
+.sideBar__body_header_container {
+}
+.sideBar__header_title {
+  margin: 20px 0px;
+}
+
+.sideBar__body_header_wraper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sideBar__header_iconAdd {
+  cursor: pointer;
+}

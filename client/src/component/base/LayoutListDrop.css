@@ -1,0 +1,44 @@
+.sideBar_setting_body_container {
+  margin-top: 20px;
+}
+
+.sideBar_setting_body_about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  margin-top: 20px;
+  border-radius: 3px 3px 0 0;
+  background: #f5f7fb;
+  border: 1px solid #f0eff5;
+}
+
+.sideBar_setting_body_about_head {
+  display: flex;
+  align-items: center;
+}
+
+.sideBar_setting_body_about_head_icon {
+  font-size: 1rem;
+}
+
+.sideBar_setting_body_about_head_title {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.sideBar_setting_body_attchment {
+  font-size: 1.2rem;
+}
+
+.sideBar_setting_body_about_content {
+  background: #ffffff;
+  border: 1px solid #f0eff5;
+  max-height: 0px;
+  transition: all 0.25s ease-in;
+  overflow: hidden;
+}
+
+.sideBar_setting_body_about_content.sideBar_setting_body_about_content_click {
+  max-height: 600px;
+}

@@ -1,0 +1,152 @@
+.modal_add_group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalAdd__container {
+  background-color: #fff;
+  outline: none;
+  max-width: 500px;
+  max-height: 800px;
+  width: 100%;
+  border-radius: 5px;
+  /* min-height: calc(100%-2.5rem); */
+}
+
+.modalAdd__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #f0eff5;
+}
+
+.modalAdd__header_close_icon {
+  cursor: pointer;
+}
+
+.modalAdd__header_title {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.modalAdd__body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.modalAdd__footer {
+  border-top: 1px solid #f0eff5;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.modalAdd__footer_btn_add_user {
+  margin-left: 25px;
+  font-size: 0.7rem !important;
+  padding: 10px;
+  background-color: #7269ef;
+  color: #fff;
+}
+
+.modalAdd__footer_close {
+  color: #7269ef;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+/*  */
+.modalAdd__body_group_input_wraper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 0 30px 0;
+}
+
+.modalAdd__body_group_input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #f0eff5;
+}
+
+.modalAdd__body_group_input_title {
+  margin-bottom: 8px;
+}
+
+.modalAdd__body_group_input_choose_file_wraper {
+  margin: 20px 0;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #f0eff5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modalAdd__body_group_input_choose_file_input {
+  flex: 1;
+  padding: 0 0 0 15px;
+}
+
+.modalAdd__body_group_input_choose_file_browse {
+  padding: 7px;
+  background-color: #e9ecef;
+}
+/* contact */
+.modalAdd__body_group_add_member_container {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.modalAdd__body_group_add_member_wraper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+.modalAdd__body_group_add_member_item_wraper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #e5e9f2;
+}
+
+.modalAdd__body_group_add_header {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.modalAdd__body_group_add_header_status {
+  position: absolute;
+  top: -2px;
+  right: 1px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 3px solid #ffff;
+}
+
+.modalAdd__body_group_add_body {
+  flex: 1;
+}
+
+.modalAdd__body_group_add_member_footer {
+}

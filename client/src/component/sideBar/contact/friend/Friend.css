@@ -1,0 +1,80 @@
+.sideBar__request_container {
+  flex: 1;
+  height: calc(100% - 28px);
+  position: relative;
+}
+
+.sideBar__request_wraper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+}
+
+.sideBar__request_item_container {
+  border-radius: 6px;
+  display: flex;
+}
+
+.sideBar__request_item_container:hover {
+  cursor: pointer;
+  background: #cccccc !important;
+}
+
+.sideBar__request_item_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sideBar__request_item_left_wraper {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.sideBar__request_frien_item_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding: 20px 10px;
+}
+
+.sideBar__request_item_right_btn_wraper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sideBar__request_item_right_name {
+  font-size: 1rem !important;
+  font-weight: 600;
+}
+
+.sideBar__request_item_right_btn_accept {
+  width: 45%;
+  font-size: 0.75rem !important;
+  font-weight: 600;
+}
+
+.sideBar__request_item_right_btn_close {
+  width: 45%;
+  font-size: 0.75rem !important;
+  font-weight: 600;
+}
+
+.sideBar__request_item_left_status {
+  position: absolute;
+  top: -2px;
+  right: 1px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 3px solid #ffff;
+}

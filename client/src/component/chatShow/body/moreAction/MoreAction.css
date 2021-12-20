@@ -1,0 +1,31 @@
+.chatShow__messageItem_moreAction_container {
+  position: relative;
+  z-index: 1;
+}
+
+.chatShow__messageItem_moreAction {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: calc(100% + 10px);
+  transform: translateX(-50%);
+  background: #fff;
+  border-radius: 15px;
+  min-width: 180px;
+  padding: 10px;
+}
+
+.chatShow__messageItem_moreAction_title {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.chatShow___messageItem_moreAction_arround {
+  border-color: #fff transparent transparent transparent;
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  border-width: 5px;
+  border-style: solid;
+  border-width: 10px;
+}

@@ -1,0 +1,19 @@
+.sideBar__body_header_search_container {
+  display: flex;
+  align-items: center;
+  background-color: #e6ebf5;
+  width: 100%;
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+
+.sideBar__body_header_search_input {
+  width: 100%;
+  border: none;
+  background-color: inherit;
+  outline: none;
+}
+
+.sideBar__body_header_search_icon {
+  margin: 0 8px;
+}

@@ -1,0 +1,27 @@
+.chatShow___header_navUser_container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.chatShow___header_navUser_avatar {
+  position: relative;
+  border-radius: 50%;
+}
+
+.chatShow___header_navUser_name {
+  text-decoration: none;
+  font-weight: 600;
+  color: #49505c;
+}
+
+.chatShow___header_navUser_status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #06d6a0;
+  border: 1px solid #fff;
+}

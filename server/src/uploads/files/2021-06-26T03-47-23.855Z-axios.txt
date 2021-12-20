@@ -1,0 +1,29 @@
+const AxiosInstance = axios.create({
+    baseURL: SERVER_URL,
+    timeout: 20000,
+    headers: {
+        'Content-Type': 'application/json'
+    }
+})
+
+
+ AxiosInstance.interceptors.response.use((response) =>{
+    // handle the response after it is received
+    return response;
+}, (error) => {
+    if (!error.response) {
+        // Network error
+        // handle the network error here
+        // Get the instance of the store here
+         store.dispatch(// Your action))
+    }
+    else {
+        // handle the errors due to the status code here
+        const code = error.response.status
+
+        // handle the errors due to response data here
+        const response = error.response.data
+    }
+
+})
+export default AxiosInstance

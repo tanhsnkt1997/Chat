@@ -1,0 +1,33 @@
+.rightBar_file_container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 30px 0;
+}
+.rightBar_file_header_wraper {
+  display: flex;
+  justify-content: space-between;
+}
+.rightBar_file_header_item {
+  padding: 7px 10px;
+  background-color: #eff1f2;
+  border-radius: 10px;
+  color: #223645;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.rightBar_file_header_item_active {
+  background-color: #1c9dea;
+  color: #fff;
+}
+
+.rightBar_file_header_item:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.rightBar_file_body_wraper {
+  flex: 1;
+}

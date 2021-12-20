@@ -1,0 +1,88 @@
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalAdd__container {
+  background-color: #fff;
+  outline: none;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 5px;
+  /* min-height: calc(100%-2.5rem); */
+}
+
+.modalAdd__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #f0eff5;
+}
+
+.modalAdd__header_close_icon {
+  cursor: pointer;
+}
+
+.modalAdd__header_title {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.modalAdd__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.modalAdd__body_email_input {
+  padding: 10px 15px;
+  outline: none;
+  border: 1px solid #f0eff5;
+}
+
+.modalAdd__body_email_label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 8px 0px;
+}
+
+.modalAdd__body_invite_input {
+  outline: none;
+  border: 1px solid #f0eff5;
+  resize: vertical;
+  min-height: 100px;
+  max-height: 400px;
+  padding: 10px 15px;
+}
+
+.modalAdd__body_email_wraper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+}
+.modalAdd__footer {
+  border-top: 1px solid #f0eff5;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.modalAdd__footer_btn_add_user {
+  margin-left: 25px;
+  font-size: 0.7rem !important;
+  padding: 10px;
+  background-color: #7269ef;
+  color: #fff;
+}
+
+.modalAdd__footer_close {
+  color: #7269ef;
+  cursor: pointer;
+  font-size: 0.9rem;
+}

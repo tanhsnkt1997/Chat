@@ -1,0 +1,28 @@
+.chatShow___header_navToolBox_container {
+  display: flex;
+  align-items: center;
+}
+
+.chatShow___header_navToolBox_icon_wraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #1c9dea;
+  margin-right: 10px;
+}
+
+.chatShow___header_navToolBox_icon_wraper:hover {
+  background-color: #7a7f9a;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.chatShow___header_navToolBox_icon {
+  font-size: 1.1rem !important;
+  color: #fff !important;
+  margin: 0 14px;
+  /* background: #7a7f9a; */
+}

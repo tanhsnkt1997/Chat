@@ -1,0 +1,77 @@
+https://codesandbox.io/s/hopeful-darwin-6io7r?file=/src/App.js:1114-1121 //hoock voi phan trang page
+
+keytool -list -v \
+-alias androiddebugkey -keystore C:\Users\Administrator\Desktop\notification\android\app\debug.keystore
+
+
+keytool -exportcert -keystore ./android/app/debug.keystore -list -v
+
+keytool -exportcert -alias androiddebugkey -keystore ./android/app/debug.keystore -list -v -storepass android
+
+'use strict'
+
+import * as mongoose from 'mongoose';
+var Schema = mongoose.Schema;
+mongoose.connect('mongodb://localhost/test');
+const conn = mongoose.connection;
+
+var personSchema = new Schema({
+  _id: Schema.Types.ObjectId,
+  name: String,
+  age: Number,
+  stories: [{ type: Schema.Types.ObjectId, ref: 'Story' }]
+});
+
+var storySchema = new Schema({
+  author: { type: Schema.Types.ObjectId, ref: 'Person' },
+  title: String,
+  fans: [{ type: Schema.Types.ObjectId, ref: 'Person' }]
+});
+
+var Story = mongoose.model('Story', storySchema);
+var Person = mongoose.model('Person', personSchema);
+
+var author = new Person({
+  _id: new mongoose.Types.ObjectId(),
+  name: 'Ian Fleming',
+  age: 50
+});
+
+var story1 = new Story({
+  title: 'Casino Royale',
+  author: author._id
+});
+
+author.save(function (err) {
+  if (err) {
+    console.log('error saving author');
+    return;
+  }
+
+  story1.save(function (err) {
+    if (err) {
+      console.log('error saving story');
+      return;
+    }
+    
+    Story.findOne({ title: 'Casino Royale' })
+      .populate('author').exec((err, doc) => {
+        if (err) { return console.error(err); }
+        console.log(doc);
+        return conn.close();
+    })
+  });
+});
+Output:
+node ./6473.js
+{ fans: [],
+  _id: 5afbe0b254edbaaf26839be8,
+  title: 'Casino Royale',
+  author:
+   { stories: [],
+     _id: 5afbe0b254edbaaf26839be7,
+     name: 'Ian Fleming',
+     age: 50,
+     __v: 0 },
+  __v: 0 }
+6473:

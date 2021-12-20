@@ -1,0 +1,48 @@
+.RightBar__LeftSide {
+  display: flex;
+  flex-direction: column;
+  /* position: absolute;
+    top: 0;
+    bottom: 0;
+    right: calc(100% + 2px); */
+  width: 300px;
+  height: 100vh;
+  background: #fff;
+  z-index: 2;
+  animation: left_right_bar ease-in 0.3s;
+  padding: 20px 25px;
+  /* transition: "all 0.4s ease 0.4s"; */
+}
+
+@keyframes left_right_bar {
+  from {
+    width: 100px;
+    opacity: 0;
+  }
+  to {
+    width: 300px;
+    opacity: 1;
+  }
+}
+
+.RightBar__LeftSide_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.RightBar__LeftSide_header_title_wraper {
+  flex: 1;
+}
+
+.RightBar__LeftSide_header_icon_wraper {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+.RightBar__LeftSide_header_icon {
+  font-size: 2rem !important;
+  color: #1c9dea;
+}

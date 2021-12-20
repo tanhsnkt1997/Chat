@@ -1,0 +1,27 @@
+.rightBar_video_audio_container {
+  display: flex;
+  background-color: #e6ebf5;
+  padding: 10px;
+  margin: 30px 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.rightBar_video_audio_thumb {
+  width: 80px;
+}
+
+.rightBar_video_audio_description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  justify-content: center;
+}
+
+.rightBar_video_audio_description_name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 70%;
+}

@@ -1,0 +1,57 @@
+.image-grid {
+  /* Arrange children using flexbox */
+  display: flex;
+  /* ALlow images to display on multiple lines rather than a single line */
+  flex-wrap: wrap;
+  /* Container should take up only 90% of the browser, leave 5% space on each side */
+  width: 90%;
+  /* Center container */
+  margin: 0 auto;
+  /* background-color: aqua; */
+}
+.grid-image {
+  /* images display inline by default and act like text. We want them to act like divs, so display block */
+  display: block;
+  /* our width setting for mobile, one image per line */
+  flex-basis: 100%;
+  /* provide some space between our images */
+  padding: 10px;
+  /* ensure padding doesn't cause images to wrap, it should be within the width rather than in addition */
+  box-sizing: border-box;
+}
+
+.grid-image {
+  flex-basis: 50%;
+  height: 100px;
+  width: 45%;
+  cursor: pointer;
+}
+
+/* increase images per line as browser gets larger using media queries
+     this first query makes two images per line at 640px width */
+/* @media only screen and (min-width: 640px) {
+  .grid-image {
+    flex-basis: 50%;
+  }
+} */
+
+/* three images per line when browser width exceeds 960px */
+/* @media only screen and (min-width: 960px) {
+  .grid-image {
+    flex-basis: 33.333%;
+  }
+} */
+
+/* four images per line when browser width exceeds 1280px */
+/* @media only screen and (min-width: 1280px) {
+  .grid-image {
+    flex-basis: 25%;
+  }
+} */
+
+/* five images per line when browser width exceeds 1600px */
+/* @media only screen and (min-width: 1600px) {
+  .grid-image {
+    flex-basis: 20%;
+  }
+} */
